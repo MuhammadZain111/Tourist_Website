@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System </title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- <script src="script.js"></script>  -->
+
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    data-tag="font"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    data-tag="font"
+  />
+
+
+
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-XXXX" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+</head>
+<body>
+    
+
+<div class="maincontainer w-full h-auto   min-w-full  ">
+ 
+  
+ <nav class=" min-h-32  bg-[#0e3934] max-w-full w-full  min-w-full z-20 top-0 start-0 border-b border-[#303233]  overflow-x-hidden">
+           
+        
+   <div class="max-w-screen-xl flex flex-col flex-wrap  w-full  min-w-full  pt-4">
+   
+   <div class="uppercontainer  h-10 flex justify-between px-8  ">
+   
+       <div   class="left-align   flex justify-between   ">
+           <a href="" class="flex items-center space-x-3 rtl:space-x-reverse mr-32  mt-2">
+               <img src="/images/Logo (1).svg" class="h-36 w-32 rounded-md" alt="Flowbite Logo">
+            </a>
+   
+           <div class="  hidden lg:flex input-group rounded-3xl  bg-white w-96 h-12 px-2">
+               <input type="text" class="form-control  w-[80%] rounded-3xl  border-none  h-full" placeholder="Destinations Attractions Tours" aria-label="Username" aria-describedby="basic-addon1">
+               <img  class="" src="/images/Search Button (2).svg" alt="search">
+         </div>
+       </div>
+   
+      
+      
+   
+   
+       <div class="flex md:order-2  space-x-3 md:space-x-0 rtl:space-x-reverse">
+   
+           <div class="flag  object-contain   h-12  w-8 mr-8 mt-2 pb-2">
+               <img  class="h-full"   src="/images/Help Button (1).svg">
+             </div> 
+             
+   
+   
+   
+          <div class="flag  object-contain  h-12   w-12 mr-6 pt-2">
+            <img  src="/images/Language Button.svg">
+   
+          </div> 
+           
+       
+           <button type="button" class=" bg-white font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-4">Book Now</button>
+          
+           <button type="button" class=" bg-white  text-[#0e3934] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-base px-4 py-2 text-center hidden :block    ">Register/ Sign in</button>
+     
+     
+             <button data-collapse-toggle="navbar-sticky" type="button" class="navbar inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden 0 focus:outline-none  " aria-controls="navbar-sticky" aria-expanded="false" id="toggle">
+               <span class="sr-only">Open main menu</span>
+               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+               </svg>
+           </button>
+         </div>
+   
+   
+   
+   
+   </div>
+   
+           
+   
+   
+           <div class=" items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+             
+               <ul class="flex items-center justify-center w-full   flex-col p-2 md:p-0 mt-4 font-medium  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 transition-all">
+              
+               <li>
+                 <a href="#" class="block py-2 px-3 text-white hover:text-[#F26828] rounded md:bg-transparent  md:p-0  text-xl " aria-current="page">Home</a>
+               </li>
+              
+               <li>
+                   <a href="#" class="block py-2 px-3 text-white hover:text-[#F26828] rounded md:bg-transparent text-xl md:p-0 " aria-current="page">Attractions & Tours</a>
+                 </li>
+              
+                 <li>
+                   <a href="#" class="block py-2 px-3 text-white hover:text-[#F26828] rounded md:bg-transparent text-xl md:p-0 " aria-current="page">Hotels</a>
+                 </li>
+              
+                 <li>
+                   <a href="#" class="block py-2 px-3 text-white hover:text-[#F26828] rounded md:bg-transparent text-xl md:p-0 " aria-current="page">Cars</a>
+                 </li>
+                
+               
+               
+               <li>
+                 <a href="#" class="block py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:hover:text-[#F26828] md:p-0 md:dark:hover:text-[#F26828] dark:text-white  dark:hover:text-text-[#ff8e38] text-xl md:dark:hover:bg-transparent dark:border-gray-700">Acessories</a>
+               </li>
+   
+   
+               <li>
+                 <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:md:hover:text-[#F26828] text-xl  md:dark:hover:bg-transparent dark:border-gray-700">Artwork</a>
+               </li>
+               <li>
+                 <a href="#" class="block py-2 px-3 text-gray-900 rounded focus:text-[#F26828]md:hover:bg-transparent  md:p-0 md:md:hover:text-[#F26828] dark:text-white   md:dark:hover:bg-transparent   text-xl   ">About Us</a>
+               </li>
+               <li>
+                 <a href="#" class="block py-2 px-3 text-gray-900 rounded  focus:text-[#F26828] md:hover:bg-transparent  md:p-0 dark:text-white dark:md:hover:text-[#F26828] md:dark:hover:bg-transparent text-xl ">Contact Us</a>
+               </li>
+               
+               <!-- Toggleable Get started button -->
+              
+             </ul>
+           </div>
+   
+           </div>
+         </nav>
+   
+  
+<!----here the  Code for the second Container Starts  -->
+
+
+<div class="secondcontainer bg-[url('/images/mainbg.jpg')] bg-cover h-screen   bg-opacity-20 bg-no-repeat inset-0  overflow-x-hidden  w-full flex item-start justify-center   ">
+
+  <div class="mask  w-full h-[650px] bg-black  opacity-[70%]" >
+    <div class="flex justify-center items-center   mt-72"   >
+      <h1 class="font-extrabold text-7xl  text-white" >Your Dream Holiday</h1>
+    </div>
+  
+
+
+
+
+
+
+</div>
+
+
+ 
+</div>
+
+<!-- ---Here the third container starts----  -->
+
+
+<div class=" hidden md:flex   innercontainer bg-white w-[75%] h-auto rounded-xl  px-4 md:relative  shadow-md  shadow-gray-800 top-0 right-0  mt-[-800px]    md:mt-[-400px]   ml-52  pt-12    flex-col  mx-auto  ">
+
+
+<div class="minicontainer bg-[#e4e5e5] h-16  w-[80%] md:absolute top-0 right-32 mt-[-20px] ml-24  rounded-2xl flex  justify-around items-center  opacity-80       ">
+
+     <buttons class="categorybtn blinkbtn  spacesbtn activebtn" onclick="showhide(0)" data-target="Hotelcontainer"  >Hotels</buttons> 
+    
+    <buttons class="categorybtn blinkbtn  spacesbtn activebtn  " data-target="Flightscontainer" onclick="showhide(0)" >Flights</buttons> 
+
+    <buttons class="categorybtn  blinkbtn  spacesbtn activebtn" data-target="carcontainer" onclick="showhide(2)" >Cars</buttons> 
+   
+    <buttons class="categorybtn" onclick="showhide(3)"data-target="Attractioncontainer" >Attractions & Tour</buttons>
+    
+    <div id="buttonLine"  class="color-red"   ></div>
+       
+</div>
+
+
+
+<div class="pb-6  h-96  w-full  flex justify-evenly  items-start  overlow-hidden   ">
+
+<form  class="flex flex-row   w-full h-full   items-start justify-evenly overlfow-hidden  "   >   
+
+<div class="Hotelcontainer w-full h-full varietycontainer  items-start mt-12 px-16 justify-evenly  gap-12 flex-wrap  flex" id="Hotelcontainer"     >
+ 
+  <div class="h-28 w-72 p-4 border-2 border-[#9da1a1]  rounded-3xl   text-[#9da1a1] text-extrabold  text-2xl ">Destinations
+    <input  type="text" class="text-[#9da1a1]  h-12 border-none  overflow-x-hidden  text-xl" placeholder="City,Airport,Region" ></input>
+  </div>
+
+  <div class="h-28  w-72 p-4 border-2 border-[#9da1a1]  rounded-3xl ">
+    <p  class="text-[#9da1a1] text-2xl" >Check In</p>
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="Sun,04 Feb "></input>
+    
+  </div>
+
+  <div class="h-28  w-72  border-2 border-[#9da1a1] p-4 rounded-3xl">
+    <p class=" text-[#9da1a1] rounded-3xl text-2xl "> Check Out  </p> 
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="Sun,04 Feb "></input>
+    
+  </div>
+
+<!-- lower-options -->
+
+  <div class="h-28  w-80 border-2 border-[#9da1a1] p-4 rounded-3xl   ">
+    
+    <p  class="text-[#9da1a1] text-2xl" >Rooms & Guests</p>
+    
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="1 Room ,1 Adult & Child "></input>
+       
+  </div>
+
+  <div class="h-16  w-64   ml-12 border-2 border-gray-700 p-4 rounded-3xl buttoncontainer text-white bg-[#0e3934]  flex items-center justify-center mt-4">
+<button    type="button"  class="text-xl font-bold text-center">Search </button>
+  </div>
+
+
+
+<div>
+</div>
+
+</div>
+
+
+<!-- here is the flights container -->
+
+<div class="Flightscontainer varietycontainer   mt-12 px-16 justify-evenly  items-start  gap-12 flex-wrap hidden  " id="Flightscontainer"     >
+ 
+  <div class=" min h-28   w-72 p-4 border-2 border-[#9da1a1]  rounded-3xl   text-[#9da1a1] text-extrabold  text-2xl ">Flights
+    <input  type="text" class="text-[#9da1a1]  h-12 border-none  overflow-x-hidden  text-xl" placeholder="City,Airport,Region" ></input>
+  </div>
+
+  <div class="h-28  w-72 p-4 border-2 border-[#9da1a1]  rounded-3xl ">
+    <p  class="text-[#9da1a1] text-2xl" >Check In</p>
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="Sun,04 Feb "></input>
+    
+  </div>
+
+  <div class="h-28  w-72  border-2 border-[#9da1a1] p-4 rounded-3xl">
+    <p class=" text-[#9da1a1] rounded-3xl text-2xl "> Check Out  </p> 
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="Sun,04 Feb "></input>
+    
+  </div>
+
+<!-- lower-options -->
+
+  <div class="h-28  w-80 border-2 border-[#9da1a1] p-4 rounded-3xl   ">
+    
+    <p  class="text-[#9da1a1] text-2xl" >Rooms & Guests</p>
+    
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="1 Room ,1 Adult & Child "></input>
+       
+  </div>
+
+  <div class="h-16  w-64   ml-12 border-2 border-gray-700 p-4 rounded-3xl buttoncontainer text-white bg-[#0e3934]  flex items-center justify-center mt-4">
+<button    type="button"  class="text-xl font-bold text-center">Search </button>
+  </div>
+
+
+
+<div>
+</div>
+
+</div>
+
+
+<!-- here is the code for the cars contaienr -->
+
+<div class="carcontainer  varietycontainer    mt-12 px-16 justify-evenly  gap-12 flex-wrap hidden "  id="carcontainer"  >
+ 
+  <div class="h-28 w-72 p-4 border-2 border-[#9da1a1]  rounded-3xl   text-[#9da1a1] text-extrabold  text-2xl ">cars
+    <input  type="text" class="text-[#9da1a1]  h-12 border-none  overflow-x-hidden  text-xl" placeholder="City,Airport,Region" ></input>
+  </div>
+
+  <div class="h-28  w-72 p-4 border-2 border-[#9da1a1]  rounded-3xl ">
+    <p  class="text-[#9da1a1] text-2xl" >Check In</p>
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="Sun,04 Feb "></input>
+    
+  </div>
+
+  <div class="h-28  w-72  border-2 border-[#9da1a1] p-4 rounded-3xl">
+    <p class=" text-[#9da1a1] rounded-3xl text-2xl "> Check Out  </p> 
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="Sun,04 Feb "></input>
+    
+  </div>
+
+<!-- lower-options -->
+
+  <div class="h-28  w-80 border-2 border-[#9da1a1] p-4 rounded-3xl   ">
+    
+    <p  class="text-[#9da1a1] text-2xl" >Rooms & Guests</p>
+    
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="1 Room ,1 Adult & Child "></input>
+       
+  </div>
+
+  <div class="h-16  w-64   ml-12 border-2 border-gray-700 p-4 rounded-3xl buttoncontainer text-white bg-[#0e3934]  flex items-center justify-center mt-4">
+<button    type="button"  class="text-xl font-bold text-center">Search </button>
+  </div>
+
+<div>
+</div>
+
+</div>
+
+
+<!-- here willl be the car containers -->
+
+
+<div class="Attractioncontainer  varietycontainer   mt-12 px-16 justify-evenly  gap-12 flex-wrap hidden " id="Attractioncontainer"           >
+ 
+  <div class="h-28 w-72 p-4 border-2 border-[#9da1a1]  rounded-3xl   text-[#9da1a1] text-extrabold  text-2xl ">Attraction
+    <input  type="text" class="text-[#9da1a1]  h-12 border-none  overflow-x-hidden  text-xl" placeholder="City,Airport,Region" ></input>
+  </div>
+
+  <div class="h-28  w-72 p-4 border-2 border-[#9da1a1]  rounded-3xl ">
+    <p  class="text-[#9da1a1] text-2xl" >Check In</p>
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="Sun,04 Feb "></input>
+    
+  </div>
+
+  <div class="h-28  w-72  border-2 border-[#9da1a1] p-4 rounded-3xl">
+    <p class=" text-[#9da1a1] rounded-3xl text-2xl "> Check Out  </p> 
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="Sun,04 Feb "></input>
+    
+  </div>
+
+<!-- lower-options -->
+
+  <div class="h-28  w-80 border-2 border-[#9da1a1] p-4 rounded-3xl   ">
+    
+    <p  class="text-[#9da1a1] text-2xl" >Rooms & Guests</p>
+    
+    <input  type="text" class="text-[#9da1a1] text-lg " placeholder="1 Room ,1 Adult & Child "></input>
+       
+  </div>
+
+  <div class="h-16  w-64   ml-12 border-2 border-gray-700 p-4 rounded-3xl buttoncontainer text-white bg-[#0e3934]  flex items-center justify-center mt-4">
+<button    type="button"  class="text-xl font-bold text-center">Search </button>
+  </div>
+
+
+
+<div>
+</div>
+
+</div>
+
+
+
+<div class="  mt-12 justify-evenly  bg-white opacity-90 rounded-3xl  absolute  top-80 left-40  h-60 hidden  md:hidden  w-80  border-2  border-[#9da1a1]  ">
+
+  <div class="  px-8 pt-8 rounded-3xl  h-[90%]  w-full">
+       
+    <p  class="text-[#9da1a1] text-2xl" >Rooms 
+     <button id="decrement"  class="bg-[#9da1a1]  w-8 h-8 ml-4 text-black rounded-lg "   >-</button>
+      <input type="number" id="value" value="0"  class="w-8  border-none  bg-transparent "   >
+      <button id="increment" class="bg-[#9da1a1] w-8 h-8 mr-4 text-black rounded-lg"   >+</button>
+    </p>
+
+    <p  class="text-[#9da1a1] text-2xl mt-2" >Adults 
+      <button id="decrement"   class="bg-[#9da1a1]  w-8 h-8 ml-4 text-black rounded-lg">-</button>
+       <input type="number" id="value" value="0"  class="w-8   border-none  bg-transparent "   >
+       <button id="increment" class="bg-[#9da1a1] w-8 h-8  text-black rounded-lg"      >+</button>
+     </p>
+ 
+     <p  class="text-[#9da1a1] text-2xl    mt-2" >children
+      <button id="decrement"   class="bg-[#9da1a1]  w-8 h-8 mr-4 text-black rounded-lg">-</button>
+       <input type="number" id="value" value="0"  class="w-8  border-none  bg-transparent   "   >
+       <button id="increment"    class="bg-[#9da1a1] w-8 h-8  text-black rounded-lg"  >+</button>
+     </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+</form>
+
+</div>
+</div>
+
+
+ <!-- Here the  code for the third container starts -->
+
+<div class="thirdcontainer h-screen  mt-24 w-full min-h-[800px] ">
+
+<div class="colorcontainer h-full bg-[#6e8885] flex flex-col   md:flex-row rounded-tl-xl rounded-tr-none rounded-bl-xl rounded-br-xl  md:mx-24  ">
+
+
+    <div class="left py-[20%] h-full md:w-[40%] w-full "> 
+   
+      <div class="px-20">
+      <p class="font-black text-5xl  text-white ">
+        Explore Our</p>
+      <p  class="text-[#0e3934] font-black text-5xl  mt-2">Popular Destinations</p>
+
+       <p class="text-white mt-4  text-xl md:pr-8  "  >Choose your Favourite holiday,in  the city or in the countyside with wiew of the sea of  the sea  or  mountains  </p>
+
+  </div>
+    </div>
+    
+    
+
+    <div class="md:w-[60%] h-full  flex flex-col   md:flex-col w-full    ">
+    
+  <div class="button flex  md:mt-32   ">
+
+  <button type="button" class=" destbtn h-12 w-32 text-base underline  focus:ring-4 focus:outline-none  font-medium rounded-3xl px-4 py-2 text-center  focus:bg-[#0e3934]  hidden md:block  mx-4 bg-[#0e3934] text-white" data-target="firstslidecont"  onclick="showhide(0)"  >Triestie</button>
+           
+  <button type="button" class="destbtn h-12 w-32  bg-white   text-base text-[#0e3934] focus:bg-[#0e3934]  focus:text-white font-medium rounded-3xl  px-4 py-2 active:bg-[#0e3934] text-center hidden md:block" onclick="showhide(1)" data-target="secondslidecont"  >Mugia</button>
+      
+  <button type="button" class=" destbtn h-12 w-32   text-[#0e393] focus:outline-none focus:bg-[#0e3934] font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block ml-4  " id="taravisobtn"  data-target=""  onlclick="showhide(2)" >Taraviso</button>
+       </div>
+
+
+
+<div class="imagecontainer  h-[80%] w-full flex justify-evenly  item-center   card-container overflow-x-auto whitespace-nowrap  relative overflow-hidden">
+  <div class="hidden left h-80 w-16 lg:flex items-center cursor-pointe absolute left-0 top-24 bottom-0 z-10">
+    <img class="w-8 mx-auto" src="/images/left-chevron.png" alt="">
+</div>
+
+
+<div class="hidden lg:flex right h-64 w-12 items-center absolute cursor-pointer right-0 top-24 bottom-0 z-10">
+  <img class="w-8 mx-auto" src="/images/Arrows.svg" alt="">
+</div>
+
+<div class="cards slidercont firstslidecont  h-full w-full lg:items-center gap-4 inline-flex lg:ml-[4.5rem] lg:overflow-hidden  whitespace-nowrap   ">
+    
+
+
+  <div class="slide h-[90%] min-w-80 object-contain rounded-3xl  bg-[url('/images/slider1.png')] bg-cover bg-center  flex flex-col items-center  justify-end "> 
+
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl"  > Loft Reseiti</p>
+  
+    <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+         
+  </div>
+  
+
+
+  <div class="slide  h-[90%]  min-h-80  min-w-80  object-contain rounded-3xl  bg-[url('/images/slider2.png')] bg-cover bg-center flex flex-col items-center  justify-end  ">
+
+    
+      <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+      <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+   
+    
+  
+  </div>
+  
+
+
+  <div class="slide h-[90%]  min-w-80   object-contain rounded-3xl  bg-[url('/images/img.jpg')] bg-cover bg-center flex flex-col items-center justify-end">
+  
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+      <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+   
+  </div>
+  
+
+
+  <div class="slide h-[90%]  min-w-80  object-contain rounded-3xl  bg-[url('/images/img.jpg')] bg-cover bg-center flex flex-col items-center justify-end ">
+  
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+      <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+  
+  </div>
+
+
+
+
+  <div class="slide h-[90%]  min-w-80  object-contain rounded-3xl  bg-[url('/images/img.jpg')] bg-cover bg-center flex flex-col items-center justify-end ">
+  
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+    <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+  
+  </div>
+
+
+
+
+  <div class="slide h-[90%] min-w-80 min-h-80 object-contain rounded-3xl  bg-[url('/images/img.jpg')] bg-cover bg-center flex  flex-col   items-end  justify-center ">
+  
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+    <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- here is the second slidercont  -->
+
+<div class="cards slidercont secondslidecont  h-full w-full lg:items-center gap-4  lg:ml-[4.5rem] lg:overflow-hidden  whitespace-nowrap  hidden ">
+    
+
+
+  <div class="slide h-[90%] min-w-80 object-contain rounded-3xl  bg-[url('/images/slider2.png')] bg-cover bg-center  flex flex-col items-center  justify-end "> 
+
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl"  > Loft Reseiti</p>
+  
+    <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+         
+  </div>
+  
+
+
+  <div class="slide  h-[90%]  min-h-80  min-w-80  object-contain rounded-3xl  bg-[url('/images/slider2.png')] bg-cover bg-center flex flex-col items-center  justify-end  ">
+
+    
+      <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+      <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+   
+    
+  
+  </div>
+  
+
+
+  <div class="slide h-[90%]  min-w-80   object-contain rounded-3xl  bg-[url('/images/img.jpg')] bg-cover bg-center flex flex-col items-center justify-end">
+  
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+      <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+   
+  </div>
+  
+
+
+  <div class="slide h-[90%]  min-w-80  object-contain rounded-3xl  bg-[url('/images/img.jpg')] bg-cover bg-center flex flex-col items-center justify-end ">
+  
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+      <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+  
+  </div>
+
+
+
+
+  <div class="slide h-[90%]  min-w-80  object-contain rounded-3xl  bg-[url('/images/img.jpg')] bg-cover bg-center flex flex-col items-center justify-end ">
+  
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+    <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+  
+  </div>
+
+
+
+
+  <div class="slide h-[90%] min-w-80 min-h-80 object-contain rounded-3xl  bg-[url('/images/img.jpg')] bg-cover bg-center flex  flex-col   items-end  justify-center ">
+  
+    <p class="font-extrabold text-white mb-4 ml-4  text-2xl">Zaint Francis</p>
+  
+    <button type="button" class=" bg-white  w-32 h-12 font-medium rounded-3xl text-base px-4 py-2 text-center hidden md:block text-black  mx-auto  mb-4">Book Now</button>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  
+<div class="mb-16"    >
+  <button type="button" class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl  md:px-4 py-2 text-center hidden md:block ml-4 bg-[#0e3934] text-white  w-64  h-16  text-2xl ">Explore More</button>
+</div>
+
+
+</div>
+  
+</div>
+</div>
+
+
+
+<!-- Here the code for the CAR Container Starts -->
+
+<div class="carcontainer w-full h-auto flex flex-col mt-32 mb-16  ">
+
+<div class="h-[90%]  w-full  md:w-[90%] mx-24 px-[3%] text-[#0e3934]  ">
+ 
+<div class="uppercontainer flex flex-col md:flex-row  w-full  h-[80%] gap-6   min-h-96  max-h-full  ">
+  
+ <div class="containerone rounded-xl object-cover  h-full w-full  border-2  border-[#9da1a1]     ">
+
+  <p class="h-16  text-2xl text-[#0e3934] text-center mt-2"    >Tesla Model 3</p>
+ <div  class="h-[70%] min-h-96 object-contain"  >
+  <img   class="h-full  w-full "  src="/images/TeslaCar Image.png"> 
+
+ </div>
+
+ <div   class="flex  justify-between pr-12"   >
+  <button type="button" class="bg-[#0e3934] font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block text-white mx-4 mb-4">Book Now</button>
+
+  <p class="text-lg text-[#0e3934] ">From 20$</p>
+ 
+
+ </div>
+ 
+
+
+ </div>
+
+
+
+<div  class=" containertwo   flex md:flex-col  w-full md:w-[50%]  h-full    px-12  gap-2  min-h-96  "  >
+
+  <div class="containerA  object-contain w-96  h-72 border-2 border-[#9da1a1] rounded-xl p-2  flex flex-col       ">
+    
+    <p class="h-16  text-xl text-[#0e3934] text-center ">Toyota Lexus ES 300 H</p>
+
+
+    <div class=" min-h-16 max-h-40 min-w-52  object-contain  mt-4 px-4" >
+      <img  class="h-full   w-full" src="/images/TeslaCarImage (1).png">
+    </div>
+     
+    <div   class="flex  justify-between pr-4 mt-4   h-12   py-2"   >
+     
+      <button type="button" class="bg-[#0e3934]  h-8 font-medium rounded-3xl text-base px-4  text-center hidden md:block text-white mx-4 mb-4">Book Now</button>
+    
+      <p class="text-lg text-[#0e3934] ">From 20$</p>
+     
+    
+     </div>
+     
+    
+  </div>
+
+
+
+<div class="containerb  object-contain w-96  h-72 border-2 border-[#9da1a1] rounded-3xl p-2  flex flex-col       ">
+    
+    <p class="h-16  text-xl text-[#0e3934] text-center ">Toyota Lexus ES 300 H</p>
+
+
+    <div class=" min-h-16 max-h-40 min-w-52  object-contain  mt-4 px-4" >
+      <img  class="h-full   w-full" src="/images/TeslaCarImage (1).png">
+    </div>
+     
+    <div   class="flex  justify-between pr-4 mt-4   h-12   py-2"   >
+     
+      <button type="button" class="bg-[#0e3934]  h-8 font-medium rounded-3xl text-base px-4  text-center hidden md:block text-white mx-4 mb-4">Book Now</button>
+    
+      <p class="text-lg text-[#0e3934] ">From 20$</p>
+     
+    
+     </div>
+     
+    
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="lower h-[40%]  w-full md:flex   mt-8   gap-10     ">
+
+
+
+  <div class="containerb  object-contain w-[30%]  h-80 border-2 border-[#9da1a1] rounded-3xl p-2  flex flex-col       ">
+    
+    <p class="h-16  text-xl text-[#0e3934] text-center ">Toyota Lexus ES 300 H</p>
+
+
+    <div class=" min-h-16 max-h-40 min-w-52  object-contain  mt-4 px-4" >
+      <img  class="h-full   w-full" src="/images/TeslaCarImage (1).png">
+    </div>
+     
+    <div   class="flex  justify-between pr-4 mt-4   h-12   py-2"   >
+     
+      <button type="button" class="bg-[#0e3934]  h-8 font-medium rounded-3xl text-base px-4  text-center hidden md:block text-white mx-4 mb-4">Book Now</button>
+    
+      <p class="text-lg text-[#0e3934] ">From 20$</p>
+     
+    
+     </div>
+     
+    
+  </div>
+
+  <div class="containerb  object-contain w-[30%]  h-80 border-2 border-[#9da1a1] rounded-3xl p-2  flex flex-col       ">
+    
+    <p class="h-16  text-xl text-[#0e3934] text-center ">Toyota Lexus ES 300 H</p>
+
+
+    <div class=" min-h-16 max-h-40 min-w-52  object-contain  mt-4 px-4" >
+      <img  class="h-full   w-full" src="/images/TeslaCarImage (1).png">
+    </div>
+     
+    <div   class="flex  justify-between pr-4 mt-4   h-12   py-2"   >
+     
+      <button type="button" class="bg-[#0e3934]  h-8 font-medium rounded-3xl text-base px-4  text-center hidden md:block text-white mx-4 mb-4">Book Now</button>
+    
+      <p class="text-lg text-[#0e3934] ">From 20$</p>
+     
+    
+     </div>
+     
+    
+  </div>
+
+
+
+
+
+
+  <div class="containerb  object-contain w-[30%]  h-80 border-2 border-[#9da1a1] rounded-3xl p-2  flex flex-col       ">
+    
+    <p class="h-16  text-xl text-[#0e3934] text-center ">Toyota Lexus ES 300 H</p>
+
+
+    <div class=" min-h-16 max-h-40 min-w-52  object-contain  mt-4 px-4" >
+      <img  class="h-full   w-full" src="/images/TeslaCarImage (1).png">
+    </div>
+     
+    <div   class="flex  justify-between pr-4 mt-4   h-12   py-2"   >
+     
+      <button type="button" class="bg-[#0e3934]  h-8 font-medium rounded-3xl text-base px-4  text-center hidden md:block text-white mx-4 mb-4">Book Now</button>
+    
+      <p class="text-lg text-[#0e3934] ">From 20$</p>
+     
+    
+     </div>
+     
+    
+  </div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+<!-- --- Here By fourth container            ------>
+
+
+<div  class=" h-auto   w-full  mt-32 ">
+
+
+<div  class="h-[90%] bg-[#6e8885] flex rounded-tl-lg rounded-tr-none rounded-bl-lg rounded-br-lg mx-24  flex-col py-16 px-16">
+
+<div class="text     ">
+
+  <div class="px-20">
+    <p class="font-black text-4xl  text-white ">
+      Explore Featured <span class="text-[#0e3934]"  > Properties   </span> </p>
+
+
+      <p class="text-white mt-4  text-lg"  >Choose your Favourite holiday,in  the city or in the countyside with wiew of the sea of  the sea  or  mountains 
+      Choose your Favourite holiday,in  the city or in the countyside with wiew of the sea of  the sea  or  mountains </p>
+
+</div>
+
+</div>
+
+
+
+<div class="carasoule container h-[80%]   w-full flex justify-evenly  item-center   mt-12  card-container overflow-x-auto whitespace-nowrap  relative overflow-hidden">
+
+
+  <div class="hidden firstarrow h-72 w-16 lg:flex items-center cursor-pointe absolute left-0 top-24 bottom-0 z-10">
+    <img class="w-12 mx-auto" src="/images/left-chevron.png" alt="">
+</div>
+
+
+<div class="hidden lg:flex secondarrow h-52 w-12 items-center absolute cursor-pointer right-0 top-32 bottom-0 z-10    ">
+  <img class="w-12 mx-auto" src="/images/Arrows.svg" alt="">
+</div>
+
+<div class="hiddencards  h-[420px] w-full lg:items-center gap-4 inline-flex lg:ml-[4.5rem] lg:overflow-hidden  whitespace-nowrap ">
+      
+  
+  
+    
+  <div class="slide h-96  min-w-80 mx-12 flex flex-col items-start justify-start  ">     
+    
+    <div class="h-96  w-full bg-white rounded-xl bg-[url('/images/img.jpg')] bg-cover bg-center object-contain flex items-end justify-end  ">
+    
+      <button type="button" class=" bg-white h-8 w-32  font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block text-black  mx-4  mb-4">Book Now</button>
+     </div>
+
+     <p  class="text-lg text-white   mt-2 text-center mx-auto ">Book No Lo Chalet del Golf Club</p>
+  </div>
+
+  
+
+
+  
+  <div class="slide h-96  min-w-80 mx-12 flex flex-col items-start justify-start  ">     
+    
+    <div class="h-96  w-full bg-white rounded-xl bg-[url('/images/img.jpg')] bg-cover bg-center object-contain flex items-end justify-end  ">
+    
+      <button type="button" class=" bg-white h-8 w-32 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block text-black  mx-4  mb-4">Book Now</button>
+     </div>
+
+     <p class="text-lg text-white   mt-2 text-center mx-auto"     >Book Now
+      La Via dell'Hangar</p>
+  </div>
+
+
+
+
+
+  <div class="slide h-96  min-w-80 mx-12 flex flex-col items-start justify-start  ">     
+    
+    <div class="h-96  w-full bg-white rounded-xl bg-[url('/images/img.jpg')] bg-cover bg-center object-contain flex items-end justify-end  ">
+    
+      <button type="button" class=" bg-white h-8 w-32 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block text-black  mx-4  mb-4">Book Now</button>
+     </div>
+
+     <p clsss="text-lg text-white   mt-2 text-center mx-auto"    >hello</p>
+  </div>
+
+ 
+  <div class="slide h-96  min-w-80 mx-12 flex flex-col items-start justify-start  ">     
+    
+    <div class="h-96  w-full bg-white rounded-xl bg-[url('/images/img.jpg')] bg-cover bg-center object-contain flex items-end justify-end  ">
+    
+      <button type="button" class=" bg-white h-8 w-32 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block text-black  mx-4  mb-4">Book Now</button>
+     </div>
+
+     <p class="text-lg text-white   mt-2 text-center mx-auto"    >hello</p>
+  </div>
+
+
+  <div class="slide h-96  min-w-80 mx-12 flex flex-col items-start justify-start  ">     
+    
+    <div class="h-96  w-full bg-white rounded-xl bg-[url('/images/img.jpg')] bg-cover bg-center object-contain flex items-end justify-end  ">
+    
+      <button type="button" class=" bg-white   h-8 w-32  font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block text-black  mx-4  mb-4">Book Now</button>
+     </div>
+
+     <p class="text-lg text-white   mt-2 text-center mx-auto"     >Book Now
+      San Pawl Lodge</p>
+  </div>
+
+
+
+  <div class="slide h-96  min-w-80 mx-12 flex flex-col items-start justify-start  ">     
+    
+    <div class="h-96  w-full bg-white rounded-xl bg-[url('/images/img.jpg')] bg-cover bg-center object-contain flex items-end justify-end  ">
+    
+      <button type="button" class=" bg-white h-12 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block text-black  mx-4  mb-4">Book Now</button>
+     </div>
+
+     <p>hello</p>
+  </div>
+
+
+  
+  <div class="slide h-96  min-w-80 mx-12 flex flex-col items-start justify-start  ">     
+    
+    <div class="h-96  w-full bg-white rounded-xl bg-[url('/images/img.jpg')] bg-cover bg-center object-contain flex items-end justify-end  ">
+    
+      <button type="button" class=" bg-white h-12 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block text-black  mx-4  mb-4">Book Now</button>
+     </div>
+
+     <p>hello</p>
+  </div>
+   
+  
+
+  
+    
+  
+    
+    
+    
+      
+      
+   
+    </div>
+    
+</div>
+
+
+<div class="mb-8   mt-12  flex items-center justify-center"    >
+  <button type="button" class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl  px-4 py-2 text-center hidden md:block ml-4 bg-[#0e3934] text-white  w-64  h-16  text-2xl ">Explore More</button>
+</div>
+
+
+
+</div>
+
+
+
+<!-- ---- HERE  is the fifth Container--- -->
+
+
+<div class="fitthcontainer h-screen w-full  ">
+
+
+<div class="in h-[90%] flex rounded-tl-lg rounded-tr-none rounded-bl-lg rounded-br-lg mx-24  flex-col py-16 px-16">
+
+  <div class="px-20   ">
+  <p class="font-black text-4xl  text-[#0e3934] text-left   "> Get your Essentials Now</p>
+   </div>
+
+
+<div class="btns flex  mt-12 ">
+
+  <button type="button" class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block  mx-4 bg-[#0e3934] text-white">Toiltries/essentials</button>
+           
+  <button type="button" class=" bg-[#d9d9d9] text-[#0e3934] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2    text-center hidden md:block">Clothes/Shoes</button>
+
+  <button type="button" class=" bg-[#d9d9d9] text-[#0e3934] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  ">Snacks</button>
+
+</div>
+
+
+
+<div class="cardcontainer flex mt-8  h-[70%] w-[80%]  ">
+
+
+<div class="firstcard h-[90%]   mx-8 border-2  rounded-3xl w-[30%] ">
+<div  class="h-[60%] rounded-xl w-full object-contain">
+<img class="rounded-3xl h-full  w-full"  src="/images/kl.jpg" >
+</div>
+
+
+<div class="mt-4"    >
+
+<span  class="text-[#0e3934] "> Skin Care Essentials</span>
+
+<a>From $40</a>
+
+<button type="button" class=" bg-[#0e3934] text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4 mt-2 mb-2 ">Buy Now</button>
+
+</div>
+</div>
+
+
+<div class="secondcard h-[90%] mx-8 border-2  rounded-3xl  w-[30%] ">
+
+  <div  class="h-[60%] rounded-3xl  object-contain" >
+    <img class=" rounded-3xl  h-full w-full "  src="/images/t.jpg">
+    
+    </div>
+   
+    
+    <div  class="mt-4" >
+    
+      <span  class="text-[#0e3934] ">Hand Wash & Shampoo</span>
+
+      <span  class="ml-2">From & 40</span>
+        
+      <button type="button" class=" bg-[#0e3934] text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  mt-2 mb-4">Buy Now</button>
+    
+      </div>
+      
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<!-- ---Here is the sixth container -- -->
+
+<div class="fitthcontainer h-auto w-full  mb-12 ">
+
+<div class=" h-full bg-[#6e8885]  rounded-tl-lg rounded-tr-none rounded-bl-lg rounded-br-lg mx-24 flex flex-col pt-16 px-16       " >
+
+
+
+  <div class="px-20  flex flex-col items-center justify-center ">
+  <p class="font-black text-4xl text-[#0e3934] text-left"><span class="text-white" >Explore Our</span> Artists/Artworks Corner</p>
+  
+  <p  class="text-white  mt-4"  >  Logde & Art aims to disseminate LOCAL CULTURE ,ART and CRAFTSMANSHIP   </p>
+
+  <p  class="text-white  mt-2 font-bold "  > You are an artist </p>
+  <p  class="text-white  mt-2 font-bold "  > Make your Works Known </p>
+
+
+
+</div>
+  
+  
+<div  class="imagecontainer flex h-full w-full  mt-24  items-center justify-evenly     ">
+
+
+<div class="items  h-[90%]  w-[20%] min-h-72  rounded-xl bg-[url('/images/wolf.png')] bg-cover bg-center  flex items-end justify-center   ">
+
+  <button type="button" class=" bg-[#0e3934] text-white font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  mt-2 mb-4">Buy Now</button>
+    
+</div>
+
+
+
+<div class="items  h-[90%]   min-h-72 w-[20%] rounded-xl bg-[url('/images/artwork.png')] bg-cover bg-center  flex items-end justify-center   mx-4 ">
+
+  <button type="button" class=" bg-[#0e3934] text-white font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  mt-2 mb-4">Buy Now</button>
+    
+</div>
+
+
+
+
+
+<div class="items  h-[90%]  w-[20%]  min-h-72  rounded-xl bg-[url('/images/fairy.png')] bg-cover bg-center  flex items-end justify-center   mx-2">
+
+  <button type="button" class=" bg-[#0e3934] text-white font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  mt-2 mb-4">Buy Now</button>
+    
+</div>
+
+
+
+
+<div class="items  h-[90%]  w-[20%]  min-h-72 rounded-xl bg-[url('/images/Artwork(2).png')] bg-cover bg-center  flex items-end justify-center">
+
+  <button type="button" class=" bg-[#0e3934] text-white font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  mt-2 mb-4">Buy Now</button>
+    
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div  class="imagecontainer flex h-full w-full  px-12  items-center justify-center   mt-44 ">
+
+  
+<div class="items  h-[90%]  w-[20%] min-h-72 bg-white rounded-xl bg-[url('/images/artwork7.png')] bg-cover bg-center  flex items-end justify-center  mx-4 ">
+
+  <button type="button" class=" bg-[#0e3934] text-white font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  mt-2 mb-4">Buy Now</button>
+    
+</div>
+
+
+
+<div class="items  h-[90%] min-h-72 w-[20%] rounded-xl bg-[url('/images/artwork8.png')] bg-cover bg-center  flex items-end justify-center   mx-4 ">
+
+  <button type="button" class=" bg-[#0e3934] text-white font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  mt-2 mb-4">Buy Now</button>
+    
+</div>
+
+
+
+
+
+<div class="items  h-[90%]  w-[20%] min-h-72 rounded-xl bg-[url('/images/artwork5.png')] bg-cover bg-center  flex items-end justify-center   mx-2">
+
+  <button type="button" class=" bg-[#0e3934] text-white font-medium rounded-3xl text-sm px-4 py-2 text-center hidden md:block ml-4  mt-2 mb-4">Buy Now</button>
+    
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class="mb-12   mt-12  flex items-center justify-center"    >
+      <button type="button" class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl  px-4 py-2 text-center hidden md:block ml-4 bg-[#0e3934] text-white  w-64  h-16  text-2xl ">Explore More</button>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- --Here the code for the  Footer -- -->
+
+
+<div class="page9 mt-52  h-screen">
+             
+  <footer class="text-white text-center text-surface/75  bg-[#0e3934] lg:text-left">
+  
+  
+  <div  class="flex flex-col h-[90%]lg:justify-between  mt-8">
+  
+  
+          <div   class="flex  w-full  h-[90%]    "  >
+  
+              <div  class="w-[93%]    "      >
+  
+                <div class="mt-4  lg:block  py-14  flex flex-col  ">
+                  <p  class=" text-3xl "  >SUBSCRIBE NOW TO FIND THE <br><p class="mt-2  text-3xl "  >LOWEST PRICE GAURANTEED</p></p>
+               </div>
+               
+              
+               <div  class="   flex items-center justify-center "  >
+                <form class="form-inline  flex   items-center  justify-center">
+                  <div  class="flex  rounded-xl  gap-2 ">
+                     <div   class="bg-white rounded-2xl w-96 h-16 flex items-center  justify-start   p-4" >
+                      <img src="images/Search Button.svg"  >
+  
+                      <input class="form-control w-[90%] border-none text-center focus:border-transparent  focus:border-none  focus:outline-none " type="search" placeholder="Enter your Email" aria-label="Search">
+                     </div>
+                     
+                     <div  class="h-16  ">
+                      <button class="h-16 w-52 my-2 my-sm-0  bg-white  font-bold text-[#0e3934]  rounded-2xl " type="submit">SUBSCRIBE</button>
+                     </div>
+                    
+                  </div>
+                    
+                  </form>
+                </div>
+              
+              
+              
+              </div>
+              
+              
+              <div  class="w-[7%]  h-96  object-contain ">
+                  <img class="w-full h-full"   src="/images/Rectangle 20.png" alt="">
+                  
+                  </div>
+             
+              
+  
+  
+  
+  
+              </div>
+              
+                  
+  
+  
+  
+  
+  
+           </div>
+       
+  <!----   Here the code for the middle footer contaniner -->
+  
+      <div class=" text-center md:text-left bg-[#6e8885]   pt-[9%]  pb-[6%]  ">
+        
+   <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      
+      
+      <div class="flex flex-col items-center   ">
+         
+          <div class="art object-contain   flex  pr-36 ">
+          <img src="/images/Logo (1).svg" alt="logo" class="self-start   float-left"   >
+           
+            
+          </div>
+         
+  
+          <div  class="px-4 text-left mt-4 ">
+          <p class="font-medium left-align  pl-2  text " >You can choose how to personalize your holiday with organized tours special food and wire experiences or enjoy the peace of the home  you choose.
+           </p>
+  
+  
+  
+  
+          </div>
+          
+  
+  
+  
+  
+  
+  
+  
+  
+     </div>
+  
+  
+  
+      
+      
+  
+  
+          <div class="flex flex-col items-start   ">
+            
+              <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start   ">Quick Links</h6>
+  
+              
+           
+           <div class="links">
+              <a href="#link1">Hotels</a>
+           </div>
+              
+            <a href="#link2">Rental Cars</a>
+            <div class="links"></div>
+  
+  
+            <a href="#link3">Destinations</a>
+            <div class="links"></div>
+  
+            <a href="#link4">Essentials</a>
+            <div class="links"></div>
+  
+  
+            <a href="#link5">Payment Policy</a>
+            <a href="#link5">Privacy & Policy</a>
+  
+  
+  
+          </div>
+           
+         
+          
+          <div>
+            <h6
+              class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+              Contact
+            </h6>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+              <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                  <path
+                    d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                </svg>
+              </span>
+              New York, NY 10012, US
+            </p>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+              <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                  <path
+                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                </svg>
+              </span>
+              info@gmail.com
+            </p>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+              <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              +310-626-3204
+            </p>
+            <p class="flex items-center justify-center md:justify-start">
+              <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              + 01 234 567 89
+            </p>
+          </div>
+  
+  <!-- HEre will be social icon container  -->
+  
+  <div class="flex  flex-col  ">
+    <h6
+      class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+      Social Links
+     </h6>
+  
+  <div   class="flex">
+        <a href="#!" class="me-6 h-8 w-8">
+         <img  class="w-full h-full"    src="/images/Watsapp (1).svg" alt="whatsapplog">
+        </a>
+  
+  
+        <a href="#!" class="me-6 h-8 w-8 ">
+          <img    class="w-full h-full"   src="/images/Facebook.svg">
+
+        </a>
+  
+  
+        <a href="#!" class="me-6  h-8 w-8    ">
+          <img   class="w-full h-full"     src="/images/Instagram (1).png">
+        </a>
+  
+  </div>
+  
+  
+  <div  class="flex mt-8">
+      <a href="#!" class="me-6 h-8 w-8">
+        <img  class="w-full h-full"   src="/images/Email (1).svg">
+
+        </a>
+  
+        <a href="#!" class="me-6 h-8 w-8">
+          <img class="w-full h-full"  src="/images/Youtube (1).svg">
+        </a>
+      
+      
+  
+  </div>
+  
+  
+            </div>
+  
+  
+        </div>
+      </div>
+  
+      
+      <div class="bg-black/5 p-6 text-center flex justify-around">
+       <div  >
+          <a  class="font-normal"  href="!#">© Lodge&Art, Trieste, Italy, 2024.</span>
+         
+       </div>
+       
+       <div  >
+          <span>© 2023 Copyright:</span>
+          <a class="font-semibold" href="https://tw-elements.com/"
+            >All rights reserved</a>
+  
+       </div>
+     
+      
+  
+      </div>
+  
+  
+      </footer>
+  
+        </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

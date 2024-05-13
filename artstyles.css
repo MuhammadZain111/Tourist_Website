@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Nanum+Gothic+Coding&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Nanum+Gothic+Coding&family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top{
+    font-family: "Dancing Script", cursive;
+}
+
+
+#mid h2{
+
+    font-family: "Lilita One", sans-serif;
+}
+#mid img{
+    border-radius: 20px;
+}
+#mid button{
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    padding: 5px 10px;
+    width: 90px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+#mid .btn-set{
+    display: flex;
+    flex-direction: column;
+}
+#mid p{
+    text-align: justify;
+}
+#bottom{
+    margin: 30px 0;
+}
+#bottom .container .content{
+    width: 100%;
+    height: 70vh;
+    border-radius: 40px;
+    box-shadow: 3px 4px 3px black;
+    background-color: black;
+}

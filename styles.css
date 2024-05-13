@@ -1,0 +1,29 @@
+
+
+html {
+    /* font-family: Noto Sans !important; */
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+
+
+body{
+
+
+margin:0;
+font-family:helvitica,sans serif;
+display:flex;
+min-height:100vh;
+justify-content:center;
+
+
+
+
+
+}
